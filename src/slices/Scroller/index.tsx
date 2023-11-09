@@ -13,22 +13,24 @@ export type ScrollerProps = SliceComponentProps<Content.ScrollerSlice>
 /**
  * Component for "Scroller" Slices.
  */
-const Scroller = ({ slice }: ScrollerProps): JSX.Element => {
+const Scroller = ({ slice, index }: ScrollerProps): JSX.Element => {
+  const dupedImages = [...slice.items, ...slice.items]
   React.useEffect(() => {
     const scrollers = document.querySelectorAll('.scroller')
-    if (scrollers instanceof NodeList) {
+    const scrollSkeletons = document.querySelectorAll('.scroll-skeleton')
+    if (scrollers instanceof NodeList && scrollSkeletons instanceof NodeList) {
       if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
         scrollers.forEach(scroller => {
           scroller.setAttribute('data-animated', 'true')
+
           const scrollerInner = scroller.querySelector('.scroller__inner')
           if (scrollerInner) {
-            const scrollerContent = Array.from(scrollerInner.children)
-            scrollerContent.forEach(item => {
-              const duplicatedItem = item.cloneNode(true) as Element
-              duplicatedItem.setAttribute('aria-hidden', 'true')
-              scrollerInner.appendChild(duplicatedItem)
-            })
+            scrollerInner.classList.remove('hidden')
+            scrollerInner.classList.add('flex')
           }
+        })
+        scrollSkeletons.forEach(skeleton => {
+          skeleton.remove()
         })
       }
     }
@@ -37,15 +39,15 @@ const Scroller = ({ slice }: ScrollerProps): JSX.Element => {
       scrollers.forEach(scroller => {
         scroller.removeAttribute('data-animated')
 
-        const scrollerInner = scroller.querySelector('.scroller__inner')
-        if (scrollerInner) {
-          const duplicatedItems = scrollerInner.querySelectorAll(
-            '[aria-hidden="true"]',
-          )
-          duplicatedItems.forEach(item => {
-            scrollerInner.removeChild(item)
-          })
-        }
+        // const scrollerInner = scroller.querySelector('.scroller__inner')
+        // if (scrollerInner) {
+        //   const duplicatedItems = scrollerInner.querySelectorAll(
+        //     '[aria-hidden="true"]',
+        //   )
+        //   duplicatedItems.forEach(item => {
+        //     scrollerInner.removeChild(item)
+        //   })
+        // }
       })
     }
   }, [])
@@ -64,20 +66,23 @@ const Scroller = ({ slice }: ScrollerProps): JSX.Element => {
         />
       )}
       <div
+        id={`scroller-${index}`}
         data-slice-type={slice.slice_type}
         data-slice-variation={slice.variation}
         className="scroller max-w-screen-lg"
         data-speed={`${slice.primary.speed?.toLowerCase()}`}
         data-direction={`${slice.primary.scroll_direction ? 'right' : 'left'}`}
       >
-        <ul className="scroller__inner relative flex flex-wrap gap-4 py-4">
-          {slice.items.length > 0 &&
-            slice.items.map(item => (
-              <li key={item.image.url}>
+        <div className="scroll-skeleton h-[300px]" />
+        <ul className="scroller__inner relative hidden flex-wrap gap-4 py-4">
+          {dupedImages.length > 0 &&
+            dupedImages.map((item, i) => (
+              <li key={item.image.url + `${i}`}>
                 <PrismicNextImage
                   field={item.image}
                   fallbackAlt=""
                   className="h-[300px] w-[400px]"
+                  aria-hidden={i > slice.items.length - 1}
                 />
               </li>
             ))}

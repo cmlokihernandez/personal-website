@@ -30,15 +30,15 @@
     -webkit-mask: linear-gradient(
       90deg,
       transparent,
-      purple 20%,
-      purple 80%,
+      purple 15%,
+      purple 85%,
       transparent
     );
     mask: linear-gradient(
       90deg,
       transparent,
-      purple 20%,
-      purple 80%,
+      purple 15%,
+      purple 85%,
       transparent
     );
   }
@@ -59,6 +59,9 @@
 
   .scroller[data-speed='fast'] {
     --_animation-duration: 20s;
+  }
+  .scroller[data-animated='true'] .scroller__inner:hover {
+    animation-play-state: paused;
   }
   .scroller[data-speed='medium'] {
     --_animation-duration: 40s;
