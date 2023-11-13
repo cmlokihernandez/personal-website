@@ -58,17 +58,17 @@
   }
 
   .scroller[data-speed='fast'] {
-    --_animation-duration: 20s;
+    --_animation-duration: 30s;
   }
   .scroller[data-animated='true'] .scroller__inner:hover {
     animation-play-state: paused;
   }
   .scroller[data-speed='medium'] {
-    --_animation-duration: 40s;
+    --_animation-duration: 50s;
   }
 
   .scroller[data-speed='slow'] {
-    --_animation-duration: 60s;
+    --_animation-duration: 100s;
   }
 
   @keyframes scroll {

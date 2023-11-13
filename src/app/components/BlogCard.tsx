@@ -21,7 +21,7 @@ export default function BlogCard({
 }: BlogCardProps) {
   return (
     <Comp className={cn('my-8 block lg:my-12', className)} {...restProps}>
-      <article className="">
+      <article className="group">
         {isFilled.image(blog_post.data.featured_image) && (
           <Link
             href={`${blog_post.url}`}
@@ -30,7 +30,7 @@ export default function BlogCard({
             <PrismicNextImage
               field={blog_post.data.featured_image}
               className="w-full transform rounded-lg object-cover object-center 
-              shadow shadow-skin-muted transition duration-700 ease-in-out hover:-translate-y-4"
+              shadow shadow-skin-muted transition duration-700 ease-in-out group-hover:-translate-y-4"
               fallbackAlt=""
               title={`Read ${asText(blog_post.data.title)}`}
             />
