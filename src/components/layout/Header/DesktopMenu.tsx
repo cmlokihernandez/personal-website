@@ -9,7 +9,7 @@ type DesktopMenuProps = {
 const DesktopMenu = ({ navigation }: DesktopMenuProps) => {
   return (
     <nav className="hidden md:block">
-      <ul>
+      <ul className="flex gap-x-3">
         {navigation.map((item, i) => {
           return (
             <li key={item.label ? item.label + i : i}>
