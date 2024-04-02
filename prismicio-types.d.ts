@@ -650,9 +650,178 @@ export type FeaturesSliceDefault = prismic.SharedSliceVariation<
 >;
 
 /**
+ * Primary content in *Features → Primary*
+ */
+export interface FeaturesSliceSecondaryPrimary {
+  /**
+   * Heading field in *Features → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: Enter section heading
+   * - **API ID Path**: features.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.TitleField;
+
+  /**
+   * Description field in *Features → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter short section description
+   * - **API ID Path**: features.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *Features → Items*
+ */
+export interface FeaturesSliceSecondaryItem {
+  /**
+   * Feature Heading field in *Features → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter feature heading
+   * - **API ID Path**: features.items[].feature_heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  feature_heading: prismic.RichTextField;
+
+  /**
+   * Feature Description field in *Features → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter short feature description
+   * - **API ID Path**: features.items[].feature_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  feature_description: prismic.RichTextField;
+
+  /**
+   * Button Label field in *Features → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.items[].button_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_label: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *Features → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.items[].button_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  button_link: prismic.LinkField;
+}
+
+/**
+ * Secondary variation for Features Slice
+ *
+ * - **API ID**: `secondary`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FeaturesSliceSecondary = prismic.SharedSliceVariation<
+  "secondary",
+  Simplify<FeaturesSliceSecondaryPrimary>,
+  Simplify<FeaturesSliceSecondaryItem>
+>;
+
+/**
+ * Primary content in *Features → Primary*
+ */
+export interface FeaturesSlicePrimaryPrimary {
+  /**
+   * Heading field in *Features → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: Enter section heading
+   * - **API ID Path**: features.primary.heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  heading: prismic.TitleField;
+
+  /**
+   * Description field in *Features → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter short section description
+   * - **API ID Path**: features.primary.description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  description: prismic.RichTextField;
+}
+
+/**
+ * Primary content in *Features → Items*
+ */
+export interface FeaturesSlicePrimaryItem {
+  /**
+   * Feature Heading field in *Features → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter feature heading
+   * - **API ID Path**: features.items[].feature_heading
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  feature_heading: prismic.RichTextField;
+
+  /**
+   * Feature Description field in *Features → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter short feature description
+   * - **API ID Path**: features.items[].feature_description
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  feature_description: prismic.RichTextField;
+
+  /**
+   * Button Label field in *Features → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.items[].button_label
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  button_label: prismic.KeyTextField;
+
+  /**
+   * Button Link field in *Features → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: features.items[].button_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  button_link: prismic.LinkField;
+}
+
+/**
+ * Primary variation for Features Slice
+ *
+ * - **API ID**: `primary`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FeaturesSlicePrimary = prismic.SharedSliceVariation<
+  "primary",
+  Simplify<FeaturesSlicePrimaryPrimary>,
+  Simplify<FeaturesSlicePrimaryItem>
+>;
+
+/**
  * Slice variation for *Features*
  */
-type FeaturesSliceVariation = FeaturesSliceDefault;
+type FeaturesSliceVariation =
+  | FeaturesSliceDefault
+  | FeaturesSliceSecondary
+  | FeaturesSlicePrimary;
 
 /**
  * Features Shared Slice
@@ -1112,8 +1281,14 @@ declare module "@prismicio/client" {
       FeaturesSlice,
       FeaturesSliceDefaultPrimary,
       FeaturesSliceDefaultItem,
+      FeaturesSliceSecondaryPrimary,
+      FeaturesSliceSecondaryItem,
+      FeaturesSlicePrimaryPrimary,
+      FeaturesSlicePrimaryItem,
       FeaturesSliceVariation,
       FeaturesSliceDefault,
+      FeaturesSliceSecondary,
+      FeaturesSlicePrimary,
       FooterHeadingSlice,
       FooterHeadingSliceDefaultPrimary,
       FooterHeadingSliceVariation,
