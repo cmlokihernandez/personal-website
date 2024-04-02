@@ -38,7 +38,6 @@ const ContentList = async ({
   })
 
   const { results } = prismicData
-  console.log('ContentList.tsx says -> ', fallbackItemImage)
 
   return (
     <>
