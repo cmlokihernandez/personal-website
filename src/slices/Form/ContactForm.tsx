@@ -119,7 +119,7 @@ const ContactForm = (data: FormSlice): JSX.Element => {
       )}
       {success !== true && (
         <form
-          className="my-6 flex flex-col gap-y-4 max-w-screen-sm mx-auto"
+          className="my-12 flex flex-col gap-y-4 max-w-screen-sm mx-auto"
           action={async (formData: FormData) => {
             trigger()
             if (!isValid) return
@@ -147,7 +147,7 @@ const ContactForm = (data: FormSlice): JSX.Element => {
           >
             <div className="relative">
               {errors?.name && (
-                <p className="error-text absolute -top-10">
+                <p className="text-destructive absolute -top-10">
                   &darr; {errors?.name?.message}
                 </p>
               )}
@@ -169,7 +169,7 @@ const ContactForm = (data: FormSlice): JSX.Element => {
             </div>
             <div className="relative">
               {errors?.email && (
-                <p className="error-text absolute -top-10">
+                <p className="text-destructive absolute -top-10">
                   {' '}
                   &darr; {errors?.email?.message}
                 </p>
@@ -191,6 +191,12 @@ const ContactForm = (data: FormSlice): JSX.Element => {
               </label>
             </div>
             <div className="relative">
+              {errors?.phone && (
+                <p className="text-destructive absolute -top-10">
+                  {' '}
+                  &darr; {errors?.phone?.message}
+                </p>
+              )}
               <label htmlFor={'phone'}>
                 <span className="sr-only">
                   {phone_label || 'What is your phone number?'}
@@ -210,6 +216,12 @@ const ContactForm = (data: FormSlice): JSX.Element => {
               </label>
             </div>
             <div className="relative">
+              {errors?.message && (
+                <p className="text-destructive absolute -top-10">
+                  {' '}
+                  &darr; {errors?.message?.message}
+                </p>
+              )}
               <label htmlFor="message">
                 <span className="sr-only">
                   {message_label || `Compose your message to us below:`}
