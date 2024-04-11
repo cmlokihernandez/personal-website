@@ -25,9 +25,9 @@ const ImageWithText = ({ slice }: ImageWithTextProps): JSX.Element => {
           className={cn(
             'rounded-lg bg-primary-foreground/80 p-4 shadow-md backdrop-blur  lg:p-8',
             {
-              'order-2 -mt-4 lg:col-span-2 lg:-mb-0 lg:-ml-4':
+              'order-2 -mt-4 lg:-mt-0 lg:col-span-3 lg:-mb-0 lg:-ml-4':
                 slice.variation === 'default',
-              'order-1 -mb-4 lg:col-span-2 lg:-mb-0 lg:-mr-4':
+              'order-1 -mb-4 lg:col-span-3 lg:-mb-0 lg:-mr-4':
                 slice.variation === 'rightImage',
             }
           )}
@@ -36,8 +36,8 @@ const ImageWithText = ({ slice }: ImageWithTextProps): JSX.Element => {
         </div>
         <div
           className={cn('flex items-center lg:col-span-3', {
-            'order-2 lg:col-span-3 lg:-ml-8': slice.variation === 'rightImage',
-            'order-1 lg:col-span-3 lg:-mr-4': slice.variation === 'default',
+            'order-2 lg:col-span-2 lg:-ml-8': slice.variation === 'rightImage',
+            'order-1 lg:col-span-2 lg:-mr-4': slice.variation === 'default',
           })}
         >
           <PrismicNextImage
