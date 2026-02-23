@@ -75,7 +75,7 @@ const Process = ({ slice }: ProcessProps): React.JSX.Element => {
                 }
                 return (
                   <Card key={slice.id + index} className={cn('max-w-sm', {})}>
-                    <CardHeader>
+                    <CardHeader className="flex justify-center">
                       {Icon ? (
                         <Icon className="inline-flex h-24 w-24 self-center" />
                       ) : (

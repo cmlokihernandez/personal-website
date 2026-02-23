@@ -1,605 +1,767 @@
 [
-  {
-    "__TYPE__": "SharedSliceContent",
-    "variation": "default",
-    "primary": {
-      "heading": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading2",
-            "content": {
-              "text": "Features Slice Heading",
-              "spans": []
-            },
-            "direction": "ltr"
-          }
-        ]
-      },
-      "description": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Give one sentence describing the results this service helps your customer achieve",
-              "spans": []
-            },
-            "direction": "ltr"
-          }
-        ]
-      }
-    },
-    "items": [
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "feature_heading",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading3",
-                  "content": {
-                    "text": "Level 1 Offer",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "feature_description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing who this is for and what it helps them achieve",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "button_label",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Offer 1 Call to Action"
-            }
-          ],
-          [
-            "button_link",
-            {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "http://twitter.com"
-              }
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "feature_heading",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading3",
-                  "content": {
-                    "text": "Level 2 Offer",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "feature_description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing who this is for and what it helps them achieve",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "button_label",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Offer 2 Call to Action"
-            }
-          ],
-          [
-            "button_link",
-            {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "https://prismic.io",
-                "target": ""
-              }
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "feature_heading",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading3",
-                  "content": {
-                    "text": "Level 3 Offer",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "feature_description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing who this is for and what it helps them achieve",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "button_label",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Offer 3 Call to Action"
-            }
-          ],
-          [
-            "button_link",
-            {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "https://prismic.io",
-                "target": ""
-              }
-            }
-          ]
-        ]
-      }
-    ]
-  },
-  {
-    "__TYPE__": "SharedSliceContent",
-    "variation": "secondary",
-    "primary": {
-      "heading": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading2",
-            "content": {
-              "text": "Features (Secondary Variation)",
-              "spans": []
-            },
-            "direction": "ltr"
-          }
-        ]
-      },
-      "description": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Give one sentence describing the results this service helps your customer achieve",
-              "spans": []
-            },
-            "direction": "ltr"
-          }
-        ]
-      }
-    },
-    "items": [
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "feature_heading",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading3",
-                  "content": {
-                    "text": "Offer #1",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "feature_description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing the results this service helps your customer achieve",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "button_label",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Call to Action"
-            }
-          ],
-          [
-            "button_link",
-            {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "http://twitter.com"
-              }
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "feature_description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing the results this service helps your customer achieve",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "feature_heading",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading3",
-                  "content": {
-                    "text": "Offer #2",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "button_label",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Call to Action"
-            }
-          ],
-          [
-            "button_link",
-            {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "https://prismic.io",
-                "target": ""
-              }
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "feature_heading",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading3",
-                  "content": {
-                    "text": "Offer #3",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "feature_description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing the results this service helps your customer achieve",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "button_label",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Call to Action"
-            }
-          ],
-          [
-            "button_link",
-            {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "https://google.com",
-                "target": ""
-              }
-            }
-          ]
-        ]
-      }
-    ]
-  },
-  {
-    "__TYPE__": "SharedSliceContent",
-    "variation": "primary",
-    "primary": {
-      "heading": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading2",
-            "content": {
-              "text": "Features (Primary Variation)",
-              "spans": []
-            },
-            "direction": "ltr"
-          }
-        ]
-      },
-      "description": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Give one sentence describing the results this service helps your customer achieve",
-              "spans": []
-            },
-            "direction": "ltr"
-          }
-        ]
-      }
-    },
-    "items": [
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "feature_heading",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading3",
-                  "content": {
-                    "text": "Offer #1",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "feature_description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing the results this service helps your customer achieve",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "button_label",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Call to Action"
-            }
-          ],
-          [
-            "button_link",
-            {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "https://slicemachine.dev"
-              }
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "feature_heading",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading3",
-                  "content": {
-                    "text": "Offer #2",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "feature_description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing the results this service helps your customer achieve",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "button_label",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Call to Action"
-            }
-          ],
-          [
-            "button_link",
-            {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "https://google.com",
-                "target": ""
-              }
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "feature_heading",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "heading3",
-                  "content": {
-                    "text": "Offer #3",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "feature_description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing the results this service helps your customer achieve",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "button_label",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Call to Action"
-            }
-          ],
-          [
-            "button_link",
-            {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "https://google.com",
-                "target": ""
-              }
-            }
-          ]
-        ]
-      }
-    ]
-  }
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Features Slice Heading",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Give one sentence describing the results this service helps your customer achieve",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"featured_items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"item_heading",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Orange"
+											}
+										}
+									]
+								}
+							],
+							[
+								"item_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Minim aute sit laboris labore cupidatat exercitation dolor nulla proident quis sunt. Laborum mollit elit ex ipsum proident est occaecat id commodo adipisicing dolore dolore cillum ad cupidatat."
+											}
+										}
+									]
+								}
+							],
+							[
+								"item_link",
+								{
+									"key": "1bdc67c9-4d4a-4e07-b396-4fe1b19760fb",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "hair",
+										"variant": "link"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"feature_heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Level 1 Offer",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"feature_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing who this is for and what it helps them achieve",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Offer 1 Call to Action"
+						}
+					],
+					[
+						"button_link",
+						{
+							"key": "a315ae6d-3c35-4141-abf8-f66b42d5a7e1",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com"
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"feature_heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Level 2 Offer",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"feature_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing who this is for and what it helps them achieve",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Offer 2 Call to Action"
+						}
+					],
+					[
+						"button_link",
+						{
+							"key": "e5ac2f29-4656-4be8-a8b0-8b3144fabbf9",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://prismic.io",
+								"target": ""
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"feature_heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Level 3 Offer",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"feature_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing who this is for and what it helps them achieve",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Offer 3 Call to Action"
+						}
+					],
+					[
+						"button_link",
+						{
+							"key": "37974b22-2442-4327-99d6-1cf89f1d4b22",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://prismic.io",
+								"target": ""
+							}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "secondary",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Features (Secondary Variation)",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Give one sentence describing the results this service helps your customer achieve",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"featured_items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"item_heading",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Exciting"
+											}
+										}
+									]
+								}
+							],
+							[
+								"item_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Culpa id consectetur non. Ut quis amet mollit eu cillum magna culpa ad ipsum. Excepteur nisi et nulla anim minim quis."
+											}
+										}
+									]
+								}
+							],
+							[
+								"item_link",
+								{
+									"key": "b2055eac-8664-4109-9ae3-9209d91789f2",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://prismic.io",
+										"text": "bend",
+										"variant": "outline"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"feature_heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Offer #1",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"feature_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing the results this service helps your customer achieve",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Call to Action"
+						}
+					],
+					[
+						"button_link",
+						{
+							"key": "9f195257-9ff1-4b11-bffb-0ef5591b0f8e",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "http://twitter.com"
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"feature_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing the results this service helps your customer achieve",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"feature_heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Offer #2",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Call to Action"
+						}
+					],
+					[
+						"button_link",
+						{
+							"key": "48bba18f-2c4e-4ee3-89ad-6bd5d614d84a",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://prismic.io",
+								"target": ""
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"feature_heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Offer #3",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"feature_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing the results this service helps your customer achieve",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Call to Action"
+						}
+					],
+					[
+						"button_link",
+						{
+							"key": "ae0c9f72-facb-42b5-b1fd-fe7ebe151e4b",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://google.com",
+								"target": ""
+							}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "primary",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Features (Primary Variation)",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Give one sentence describing the results this service helps your customer achieve",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"featured_items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"item_heading",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "heading3",
+											"content": {
+												"text": "Spent"
+											}
+										}
+									]
+								}
+							],
+							[
+								"item_description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Veniam et incididunt labore laborum elit officia sunt elit sint cillum do dolor. Aliqua dolore sint nostrud excepteur occaecat exercitation consectetur."
+											}
+										}
+									]
+								}
+							],
+							[
+								"item_link",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "9bdbdf70-cce9-4133-bad4-933c6576b486",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://twitter.com",
+										"text": "massage",
+										"variant": "link"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"feature_heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Offer #1",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"feature_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing the results this service helps your customer achieve",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Call to Action"
+						}
+					],
+					[
+						"button_link",
+						{
+							"key": "28c23979-f955-48e8-a0b7-c1f6cb2371e1",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://slicemachine.dev"
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"feature_heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Offer #2",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"feature_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing the results this service helps your customer achieve",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Call to Action"
+						}
+					],
+					[
+						"button_link",
+						{
+							"key": "f1952760-ca3c-44ee-b5e4-f67b02049f9a",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://google.com",
+								"target": ""
+							}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"feature_heading",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "heading3",
+									"content": {
+										"text": "Offer #3",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"feature_description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing the results this service helps your customer achieve",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Call to Action"
+						}
+					],
+					[
+						"button_link",
+						{
+							"key": "450f1afb-35dd-4329-a0c1-147df7bbe6be",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://google.com",
+								"target": ""
+							}
+						}
+					]
+				]
+			}
+		]
+	}
 ]

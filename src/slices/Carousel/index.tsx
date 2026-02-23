@@ -52,11 +52,11 @@ const Carousel = ({ slice }: CarouselProps): React.JSX.Element => {
                   return (
                     <CarouselItem
                       key={slice.id + index}
-                      className="md:basis-1/3 lg:basis-1/4"
+                      className="p-2 md:basis-1/3 lg:basis-1/4"
                     >
-                      <div className="p-1">
-                        <Card>
-                          <CardContent className="relative flex aspect-square flex-col items-center justify-center p-6">
+                      <div className="">
+                        <Card className="p-0">
+                          <CardContent className="relative flex aspect-square flex-col items-center justify-center">
                             <PrismicNextImage
                               field={item.image}
                               imgixParams={{ ar: '1:1', fit: 'crop' }}

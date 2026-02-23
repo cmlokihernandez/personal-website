@@ -1,163 +1,217 @@
 [
-  {
-    "__TYPE__": "SharedSliceContent",
-    "variation": "default",
-    "primary": {
-      "heading": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "heading2",
-            "content": {
-              "text": "Process Slice Heading",
-              "spans": []
-            },
-            "direction": "ltr"
-          }
-        ]
-      },
-      "description": {
-        "__TYPE__": "StructuredTextContent",
-        "value": [
-          {
-            "type": "paragraph",
-            "content": {
-              "text": "Give one sentence describing the transformation your service offers form start to finish",
-              "spans": []
-            },
-            "direction": "ltr"
-          }
-        ]
-      },
-      "title": {
-        "__TYPE__": "FieldContent",
-        "type": "Text",
-        "value": "The Process"
-      }
-    },
-    "items": [
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "icon",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Select",
-              "value": "message"
-            }
-          ],
-          [
-            "button_label",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Optional Call to Action"
-            }
-          ],
-          [
-            "button_link",
-            {
-              "__TYPE__": "LinkContent",
-              "value": {
-                "__TYPE__": "ExternalLink",
-                "url": "https://google.com",
-                "target": ""
-              }
-            }
-          ],
-          [
-            "description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing the transformation your service offers form start to finish",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "step_title",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Step 1"
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "icon",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Select",
-              "value": "call"
-            }
-          ],
-          [
-            "description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing the transformation your service offers form start to finish",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "icon",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Select",
-              "value": "people"
-            }
-          ],
-          [
-            "description",
-            {
-              "__TYPE__": "StructuredTextContent",
-              "value": [
-                {
-                  "type": "paragraph",
-                  "content": {
-                    "text": "Give one sentence describing the transformation your service offers form start to finish",
-                    "spans": []
-                  },
-                  "direction": "ltr"
-                }
-              ]
-            }
-          ],
-          [
-            "step_title",
-            {
-              "__TYPE__": "FieldContent",
-              "type": "Text",
-              "value": "Step 3"
-            }
-          ]
-        ]
-      }
-    ]
-  }
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Process Slice Heading",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"description": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Give one sentence describing the transformation your service offers form start to finish",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"title": {
+				"__TYPE__": "FieldContent",
+				"type": "Text",
+				"value": "The Process"
+			},
+			"steps": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"icon",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "message",
+									"type": "Select"
+								}
+							],
+							[
+								"step_title",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "kill",
+									"type": "Text"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Ea id ullamco veniam aliquip dolor tempor velit dolor exercitation quis. Proident et sint velit sint in ut do amet minim occaecat sint elit cillum culpa."
+											}
+										}
+									]
+								}
+							],
+							[
+								"link",
+								{
+									"__TYPE__": "LinkContent",
+									"key": "56426d1a-018b-4222-a3cd-55010b93c631",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "https://slicemachine.dev",
+										"text": "everywhere",
+										"variant": "secondary"
+									}
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"icon",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "message"
+						}
+					],
+					[
+						"button_label",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Optional Call to Action"
+						}
+					],
+					[
+						"button_link",
+						{
+							"key": "2181a42e-ba5a-4dfd-a0fa-780f8e70e469",
+							"__TYPE__": "LinkContent",
+							"value": {
+								"__TYPE__": "ExternalLink",
+								"url": "https://google.com",
+								"target": ""
+							}
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing the transformation your service offers form start to finish",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"step_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Step 1"
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"icon",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "call"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing the transformation your service offers form start to finish",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"icon",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Select",
+							"value": "people"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Give one sentence describing the transformation your service offers form start to finish",
+										"spans": []
+									},
+									"direction": "ltr"
+								}
+							]
+						}
+					],
+					[
+						"step_title",
+						{
+							"__TYPE__": "FieldContent",
+							"type": "Text",
+							"value": "Step 3"
+						}
+					]
+				]
+			}
+		]
+	}
 ]

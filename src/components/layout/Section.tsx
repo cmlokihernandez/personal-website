@@ -7,6 +7,7 @@ type SectionProps = {
   padded?: boolean
   children: React.ReactNode
   width?: 'full' | '2xl' | 'xl' | 'lg' | 'md'
+  style?: React.CSSProperties
 }
 
 export default function Section({
