@@ -21,7 +21,11 @@ const Testimonial = ({ slice }: TestimonialProps): React.JSX.Element => {
       as="blockquote"
     >
       <div className="mx-auto my-8 flex max-w-(--breakpoint-md) flex-col items-center justify-center">
-        <Quote width={55} height={55} />
+        <Quote
+          width={55}
+          height={55}
+          className="text-primary dark:text-sidebar-primary"
+        />
         <PrismicRichText
           field={slice.primary.quote}
           components={{

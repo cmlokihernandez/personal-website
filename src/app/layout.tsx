@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils'
 import Footer from '@/components/layout/Footer/Footer'
 import { Outfit } from 'next/font/google'
 import { PrismicPreview } from '@prismicio/next'
+import { ThemeProvider } from '@/components/ThemeProvider'
 
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-sans' })
 
@@ -29,16 +30,34 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={outfit.variable}>
+    <html
+      lang="en"
+      className={cn(outfit.variable, 'scroll-smooth')}
+      suppressHydrationWarning
+    >
+      <head>
+        <link rel="preconnect" href="https://images.prismic.io" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+      </head>
       <body
         className={cn(
           'flex min-h-screen flex-col justify-between bg-background font-sans antialiased',
         )}
       >
-        <Header />
-        {children}
-        <Footer />
-        <PrismicPreview repositoryName={repositoryName} />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <a href="#main-content" className="skip-link">
+            Skip to content
+          </a>
+          <Header />
+          <main id="main-content">{children}</main>
+          <Footer />
+          <PrismicPreview repositoryName={repositoryName} />
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -61,7 +61,7 @@ const Faq = ({ slice }: FaqProps): React.JSX.Element => {
                     field={item.question}
                     components={{
                       paragraph: ({ children }) => (
-                        <p className="prose pr-4 text-left font-semibold lg:prose-lg xl:prose-xl">
+                        <p className="prose pr-4 text-left font-semibold lg:prose-lg xl:prose-xl dark:prose-invert">
                           {children}
                         </p>
                       ),
@@ -77,7 +77,7 @@ const Faq = ({ slice }: FaqProps): React.JSX.Element => {
                     field={item.answer}
                     components={{
                       paragraph: ({ children }) => (
-                        <p className="my-1.5 prose lg:my-3 lg:prose-lg">
+                        <p className="my-1.5 prose lg:my-3 lg:prose-lg dark:prose-invert">
                           {children}
                         </p>
                       ),

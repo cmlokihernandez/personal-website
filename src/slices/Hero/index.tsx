@@ -29,7 +29,7 @@ const Hero = ({ slice }: HeroProps): React.JSX.Element => {
   const useFadeOverlay = variation !== 'default'
   const contentBg =
     variation !== 'default'
-      ? 'bg-linear-to-tr from-primary/90 to-secondary-foreground/40 backdrop-blur'
+      ? 'bg-linear-to-tr from-primary/90 to-secondary-foreground/40 dark:to-secondary/70 backdrop-blur'
       : ''
 
   return (
@@ -89,10 +89,13 @@ const Hero = ({ slice }: HeroProps): React.JSX.Element => {
                   <Heading
                     as="h2"
                     size="6xl"
-                    className={cn('text-primary-foreground', {
-                      'text-center lg:text-center':
-                        slice.variation !== 'withImage',
-                    })}
+                    className={cn(
+                      'text-primary-foreground dark:text-foreground',
+                      {
+                        'text-center lg:text-center':
+                          slice.variation !== 'withImage',
+                      },
+                    )}
                   >
                     {children}
                   </Heading>

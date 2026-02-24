@@ -24,7 +24,7 @@ const ImageWithText = ({ slice }: ImageWithTextProps): React.JSX.Element => {
       <div className={cn('grid lg:grid-cols-5')}>
         <div
           className={cn(
-            'rounded-lg bg-primary-foreground/80 p-4 shadow-md backdrop-blur lg:p-8',
+            'prose rounded-lg bg-primary-foreground/80 p-4 shadow-md backdrop-blur lg:prose-lg lg:p-8 dark:bg-secondary/80 dark:prose-invert',
             {
               'order-2 -mt-4 lg:col-span-3 lg:mt-0 lg:mb-0 lg:-ml-4':
                 slice.variation === 'default',

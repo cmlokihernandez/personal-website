@@ -27,7 +27,7 @@ const FooterHeading = ({ slice }: FooterHeadingProps): React.JSX.Element => {
               <Heading
                 as="h2"
                 size="5xl"
-                className="text-primary-foreground lg:text-center"
+                className="text-primary-foreground lg:text-center dark:text-foreground"
               >
                 {children}
               </Heading>

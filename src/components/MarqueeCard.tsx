@@ -43,7 +43,7 @@ const MarqueeCard = ({ item }: MarqueeCardProps) => {
                   <Info className="h-4 w-4" />
                 </Button>
               </DialogTrigger>
-              <DialogContent className="h-full overflow-y-auto sm:h-auto sm:max-h-[80vh] sm:max-w-lg md:max-w-4xl lg:max-w-6xl">
+              <DialogContent className="h-full overflow-y-auto backdrop-blur-md sm:h-auto sm:max-h-[80vh] sm:max-w-lg md:max-w-4xl lg:max-w-6xl dark:bg-secondary/90">
                 <DialogHeader>
                   <DialogTitle className="text-3xl">{item.name}</DialogTitle>
                 </DialogHeader>
@@ -56,6 +56,7 @@ const MarqueeCard = ({ item }: MarqueeCardProps) => {
                           <PrismicNextLink
                             field={item.link}
                             aria-label={`Learn More about ${item.name}`}
+                            className="dark:text-sidebar-primary"
                           >
                             {item.link.text
                               ? item.link.text

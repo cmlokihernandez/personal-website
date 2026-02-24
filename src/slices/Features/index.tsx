@@ -36,9 +36,13 @@ const Features = ({ slice }: FeaturesProps): React.JSX.Element => {
               <Heading
                 as="h2"
                 size="5xl"
-                className={cn('py-4 lg:py-8 lg:text-center', {
-                  'text-primary-foreground': slice.variation === 'primary',
-                })}
+                className={cn(
+                  'py-4 lg:py-8 lg:text-center dark:text-sidebar-primary',
+                  {
+                    'text-primary-foreground dark:text-foreground':
+                      slice.variation === 'primary',
+                  },
+                )}
               >
                 {children}
               </Heading>
@@ -56,7 +60,14 @@ const Features = ({ slice }: FeaturesProps): React.JSX.Element => {
             field={slice.primary.description}
             components={{
               paragraph: ({ children }) => (
-                <p className="prose mb-8 lg:prose-lg">{children}</p>
+                <p
+                  className={cn('prose mb-8 lg:prose-lg dark:prose-invert', {
+                    'text-background dark:text-foreground':
+                      slice.variation === 'primary',
+                  })}
+                >
+                  {children}
+                </p>
               ),
             }}
           />
@@ -71,7 +82,7 @@ const Features = ({ slice }: FeaturesProps): React.JSX.Element => {
                   key={slice.id + index}
                   className={cn('w-87.5', {
                     'bg-secondary': slice.variation === 'default',
-                    'bg-primary text-primary-foreground':
+                    'bg-primary text-primary-foreground dark:text-foreground':
                       slice.variation === 'primary',
                   })}
                 >
@@ -83,10 +94,13 @@ const Features = ({ slice }: FeaturesProps): React.JSX.Element => {
                           <Heading
                             as="h3"
                             size="3xl"
-                            className={cn('lg:text-center', {
-                              'text-primary-foreground':
-                                slice.variation === 'primary',
-                            })}
+                            className={cn(
+                              'lg:text-center dark:text-sidebar-primary',
+                              {
+                                'text-primary-foreground dark:text-foreground':
+                                  slice.variation === 'primary',
+                              },
+                            )}
                           >
                             {children}
                           </Heading>
@@ -100,7 +114,14 @@ const Features = ({ slice }: FeaturesProps): React.JSX.Element => {
                         field={item.feature_description}
                         components={{
                           paragraph: ({ children }) => (
-                            <p className="prose mb-8">{children}</p>
+                            <p
+                              className={cn('prose mb-8 dark:prose-invert', {
+                                'text-background dark:text-foreground':
+                                  slice.variation === 'primary',
+                              })}
+                            >
+                              {children}
+                            </p>
                           ),
                         }}
                       />

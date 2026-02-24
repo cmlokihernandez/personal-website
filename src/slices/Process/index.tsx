@@ -59,7 +59,9 @@ const Process = ({ slice }: ProcessProps): React.JSX.Element => {
               field={slice.primary.description}
               components={{
                 paragraph: ({ children }) => (
-                  <p className="prose mb-8 lg:prose-lg">{children}</p>
+                  <p className="prose mb-8 lg:prose-lg dark:prose-invert">
+                    {children}
+                  </p>
                 ),
               }}
             />
@@ -79,7 +81,7 @@ const Process = ({ slice }: ProcessProps): React.JSX.Element => {
                       {Icon ? (
                         <Icon className="inline-flex h-24 w-24 self-center" />
                       ) : (
-                        <p className="text-center text-[6rem] font-black">
+                        <p className="text-center text-[6rem] font-black text-primary dark:text-sidebar-primary">
                           {index + 1}
                         </p>
                       )}
@@ -95,7 +97,9 @@ const Process = ({ slice }: ProcessProps): React.JSX.Element => {
                           field={item.description}
                           components={{
                             paragraph: ({ children }) => (
-                              <p className="prose mb-8">{children}</p>
+                              <p className="prose mb-8 dark:prose-invert">
+                                {children}
+                              </p>
                             ),
                           }}
                         />

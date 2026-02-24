@@ -109,7 +109,7 @@
   --popover: oklch(0.21 0.034 264.665);
   --popover-foreground: oklch(0.985 0.002 247.839);
 
-  --primary: oklch(0.65 0.14 215);
+  --primary: oklch(0.5 0.15 222);
   --primary-foreground: oklch(0.98 0.02 201);
 
   --secondary: oklch(0.274 0.006 286.033);
@@ -233,11 +233,11 @@
     height: auto;
     clip: auto;
     white-space: normal;
-    background-color: hsl(var(--background));
-    color: hsl(var(--foreground));
+    background-color: var(--background);
+    color: var(--foreground);
     border-radius: 0.5rem;
     border-width: 1px;
-    border-color: hsl(var(--border));
+    border-color: var(--border);
   }
   /* Container for the timeline */
   .timeline {
