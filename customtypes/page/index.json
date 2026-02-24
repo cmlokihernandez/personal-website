@@ -26,6 +26,12 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "sticky_image": {
+              "type": "SharedSlice"
+            },
+            "experience": {
+              "type": "SharedSlice"
+            },
             "form": {
               "type": "SharedSlice"
             },

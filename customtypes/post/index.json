@@ -43,6 +43,18 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "sticky_image": {
+              "type": "SharedSlice"
+            },
+            "features": {
+              "type": "SharedSlice"
+            },
+            "carousel": {
+              "type": "SharedSlice"
+            },
+            "experience": {
+              "type": "SharedSlice"
+            },
             "testimonial": {
               "type": "SharedSlice"
             },

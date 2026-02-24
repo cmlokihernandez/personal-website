@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic'
 export const components = {
   carousel: dynamic(() => import('./Carousel')),
   content_index: dynamic(() => import('./ContentIndex')),
+  experience: dynamic(() => import('./Experience')),
   faq: dynamic(() => import('./Faq')),
   features: dynamic(() => import('./Features')),
   footer_heading: dynamic(() => import('./FooterHeading')),
@@ -15,5 +16,6 @@ export const components = {
   image_with_text: dynamic(() => import('./ImageWithText')),
   process: dynamic(() => import('./Process')),
   rich_text: dynamic(() => import('./RichText')),
+  sticky_image: dynamic(() => import('./StickyImage')),
   testimonial: dynamic(() => import('./Testimonial')),
 }

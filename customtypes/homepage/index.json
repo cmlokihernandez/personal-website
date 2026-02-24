@@ -20,6 +20,12 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "sticky_image": {
+              "type": "SharedSlice"
+            },
+            "experience": {
+              "type": "SharedSlice"
+            },
             "carousel": {
               "type": "SharedSlice"
             },

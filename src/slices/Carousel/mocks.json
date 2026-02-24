@@ -1,170 +1,458 @@
 [
-  {
-    "__TYPE__": "SharedSliceContent",
-    "variation": "default",
-    "primary": {
-      "title": {
-        "__TYPE__": "FieldContent",
-        "value": "carefully",
-        "type": "Text"
-      }
-    },
-    "items": [
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "image",
-            {
-              "origin": {
-                "id": "7WAGthfGJ9w",
-                "url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
-                "width": 5460,
-                "height": 3640
-              },
-              "url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
-              "width": 5460,
-              "height": 3640,
-              "edit": {
-                "background": "transparent",
-                "zoom": 1,
-                "crop": {
-                  "x": 0,
-                  "y": 0
-                }
-              },
-              "credits": null,
-              "alt": "yellow lemon fruit on white surface",
-              "__TYPE__": "ImageContent",
-              "thumbnails": {}
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "image",
-            {
-              "url": "https://images.unsplash.com/photo-1559181567-c3190ca9959b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8ZnJ1aXR8ZW58MHx8fHwxNzEyMDg0MTU2fDA&ixlib=rb-4.0.3&q=85",
-              "alt": "two cherries",
-              "origin": {
-                "id": "vbAEHCrvXZ0",
-                "url": "https://images.unsplash.com/photo-1559181567-c3190ca9959b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8ZnJ1aXR8ZW58MHx8fHwxNzEyMDg0MTU2fDA&ixlib=rb-4.0.3&q=85",
-                "width": 2244,
-                "height": 2805
-              },
-              "width": 2244,
-              "height": 2805,
-              "edit": {
-                "background": "transparent",
-                "zoom": 1,
-                "crop": {
-                  "x": 0,
-                  "y": 0
-                }
-              },
-              "credits": null,
-              "__TYPE__": "ImageContent",
-              "thumbnails": {}
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "image",
-            {
-              "url": "https://images.unsplash.com/photo-1588514206464-214a4d63ed18?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
-              "alt": "sliced lemon on white background",
-              "origin": {
-                "id": "TREaif_QI6Y",
-                "url": "https://images.unsplash.com/photo-1588514206464-214a4d63ed18?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
-                "width": 2336,
-                "height": 3504
-              },
-              "width": 2336,
-              "height": 3504,
-              "edit": {
-                "background": "transparent",
-                "zoom": 1,
-                "crop": {
-                  "x": 0,
-                  "y": 0
-                }
-              },
-              "credits": null,
-              "__TYPE__": "ImageContent",
-              "thumbnails": {}
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "image",
-            {
-              "url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTIwMzc0ODB8MA&ixlib=rb-4.0.3&q=85",
-              "alt": "sliced fruit on white surface",
-              "origin": {
-                "id": "YSA1IRkGAsg",
-                "url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTIwMzc0ODB8MA&ixlib=rb-4.0.3&q=85",
-                "width": 5760,
-                "height": 3840
-              },
-              "width": 5760,
-              "height": 3840,
-              "edit": {
-                "background": "transparent",
-                "zoom": 1,
-                "crop": {
-                  "x": 0,
-                  "y": 0
-                }
-              },
-              "credits": null,
-              "__TYPE__": "ImageContent",
-              "thumbnails": {}
-            }
-          ]
-        ]
-      },
-      {
-        "__TYPE__": "GroupItemContent",
-        "value": [
-          [
-            "image",
-            {
-              "url": "https://images.unsplash.com/photo-1547514701-42782101795e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
-              "alt": "two orange fruits on table",
-              "origin": {
-                "id": "nibgG33H0F8",
-                "url": "https://images.unsplash.com/photo-1547514701-42782101795e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
-                "width": 4000,
-                "height": 6000
-              },
-              "width": 4000,
-              "height": 6000,
-              "edit": {
-                "background": "transparent",
-                "zoom": 1,
-                "crop": {
-                  "x": 0,
-                  "y": 0
-                }
-              },
-              "credits": null,
-              "__TYPE__": "ImageContent",
-              "thumbnails": {}
-            }
-          ]
-        ]
-      }
-    ]
-  }
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"title": {
+				"__TYPE__": "FieldContent",
+				"value": "carefully",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"origin": {
+								"id": "7WAGthfGJ9w",
+								"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
+								"width": 5460,
+								"height": 3640
+							},
+							"url": "https://images.unsplash.com/photo-1582287104445-6754664dbdb2?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMnx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
+							"width": 5460,
+							"height": 3640,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"alt": "yellow lemon fruit on white surface",
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1559181567-c3190ca9959b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8ZnJ1aXR8ZW58MHx8fHwxNzEyMDg0MTU2fDA&ixlib=rb-4.0.3&q=85",
+							"alt": "two cherries",
+							"origin": {
+								"id": "vbAEHCrvXZ0",
+								"url": "https://images.unsplash.com/photo-1559181567-c3190ca9959b?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxM3x8ZnJ1aXR8ZW58MHx8fHwxNzEyMDg0MTU2fDA&ixlib=rb-4.0.3&q=85",
+								"width": 2244,
+								"height": 2805
+							},
+							"width": 2244,
+							"height": 2805,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1588514206464-214a4d63ed18?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
+							"alt": "sliced lemon on white background",
+							"origin": {
+								"id": "TREaif_QI6Y",
+								"url": "https://images.unsplash.com/photo-1588514206464-214a4d63ed18?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxMXx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
+								"width": 2336,
+								"height": 3504
+							},
+							"width": 2336,
+							"height": 3504,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTIwMzc0ODB8MA&ixlib=rb-4.0.3&q=85",
+							"alt": "sliced fruit on white surface",
+							"origin": {
+								"id": "YSA1IRkGAsg",
+								"url": "https://images.unsplash.com/photo-1517260739337-6799d239ce83?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw2fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3MTIwMzc0ODB8MA&ixlib=rb-4.0.3&q=85",
+								"width": 5760,
+								"height": 3840
+							},
+							"width": 5760,
+							"height": 3840,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			},
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"image",
+						{
+							"url": "https://images.unsplash.com/photo-1547514701-42782101795e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
+							"alt": "two orange fruits on table",
+							"origin": {
+								"id": "nibgG33H0F8",
+								"url": "https://images.unsplash.com/photo-1547514701-42782101795e?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwxOHx8Y2l0cnVzJTIwZnJ1aXR8ZW58MHx8fHwxNzEyMDM3NDgwfDA&ixlib=rb-4.0.3&q=85",
+								"width": 4000,
+								"height": 6000
+							},
+							"width": 4000,
+							"height": 6000,
+							"edit": {
+								"background": "transparent",
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								}
+							},
+							"credits": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					]
+				]
+			}
+		]
+	},
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "withDetails",
+		"primary": {
+			"items": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"value": "#c13fb1",
+									"type": "Color"
+								}
+							],
+							[
+								"logo",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1592187270271-9a4b84faa228?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NzE5MjUzODl8MA&ixlib=rb-4.1.0&q=85",
+									"alt": "sliced orange fruit on blue surface",
+									"origin": {
+										"id": "8ZGgg6rhzxs",
+										"url": "https://images.unsplash.com/photo-1592187270271-9a4b84faa228?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw1fHxjaXRydXMlMjBmcnVpdHxlbnwwfHx8fDE3NzE5MjUzODl8MA&ixlib=rb-4.1.0&q=85",
+										"width": 4000,
+										"height": 6000
+									},
+									"width": 4000,
+									"height": 6000,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"link",
+								{
+									"key": "58e0de9d-5198-4cd5-a2bb-377f2084efc3",
+									"__TYPE__": "LinkContent",
+									"value": {
+										"__TYPE__": "ExternalLink",
+										"url": "http://google.com",
+										"text": "learn"
+									}
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Enim consectetur aute qui cupidatat enim tempor cupidatat."
+											}
+										}
+									]
+								}
+							],
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Highlighted Skill"
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Certification"
+								}
+							],
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Color",
+									"value": "#FADC70"
+								}
+							],
+							[
+								"logo",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1602934445884-da0fa1c9d3b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxsb2dvfGVufDB8fHx8MTc3MTk2NTE2N3ww&ixlib=rb-4.1.0&q=85",
+									"alt": "Enim consectetur aute qui cupidatat enim tempor cupidatat.",
+									"origin": {
+										"id": "MRjjcDIk3Gw",
+										"url": "https://images.unsplash.com/photo-1602934445884-da0fa1c9d3b3?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHw0fHxsb2dvfGVufDB8fHx8MTc3MTk2NTE2N3ww&ixlib=rb-4.1.0&q=85",
+										"width": 2988,
+										"height": 2634
+									},
+									"width": 2988,
+									"height": 2634,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Enim consectetur aute qui cupidatat enim tempor cupidatat.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Another Skill"
+								}
+							],
+							[
+								"color",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Color",
+									"value": "#2D4D22"
+								}
+							],
+							[
+								"logo",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1545231027-637d2f6210f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxsb2dvfGVufDB8fHx8MTc3MTk2NTE2N3ww&ixlib=rb-4.1.0&q=85",
+									"alt": "Starbucks logo",
+									"origin": {
+										"id": "3U9L9Chc3is",
+										"url": "https://images.unsplash.com/photo-1545231027-637d2f6210f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwzfHxsb2dvfGVufDB8fHx8MTc3MTk2NTE2N3ww&ixlib=rb-4.1.0&q=85",
+										"width": 2448,
+										"height": 3264
+									},
+									"width": 2448,
+									"height": 3264,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Enim consectetur aute qui cupidatat enim tempor cupidatat.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"name",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Another Certification"
+								}
+							],
+							[
+								"logo",
+								{
+									"provider": "imgix",
+									"url": "https://images.unsplash.com/photo-1516876437184-593fda40c7ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMnx8TG9nb3xlbnwwfHx8fDE3NzE5NjUyNTB8MA&ixlib=rb-4.1.0&q=85",
+									"alt": "two donuts",
+									"origin": {
+										"id": "CoNsEK5iHug",
+										"url": "https://images.unsplash.com/photo-1516876437184-593fda40c7ce?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMzc0NjN8MHwxfHNlYXJjaHwyMnx8TG9nb3xlbnwwfHx8fDE3NzE5NjUyNTB8MA&ixlib=rb-4.1.0&q=85",
+										"width": 4173,
+										"height": 2776
+									},
+									"width": 4173,
+									"height": 2776,
+									"edit": {
+										"background": "transparent",
+										"zoom": 1,
+										"crop": {
+											"x": 0,
+											"y": 0
+										}
+									},
+									"credits": null,
+									"__TYPE__": "ImageContent",
+									"thumbnails": {}
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Enim consectetur aute qui cupidatat enim tempor cupidatat.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Carousel with Details",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": []
+			}
+		]
+	}
 ]

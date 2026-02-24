@@ -1,0 +1,52 @@
+import { FC } from 'react'
+import { Content } from '@prismicio/client'
+import { SliceComponentProps } from '@prismicio/react'
+import { PrismicRichText } from '@/components/typography/PrismicRichText'
+import Heading from '@/components/typography/Heading'
+
+/**
+ * Props for `Experience`.
+ */
+export type ExperienceProps = SliceComponentProps<Content.ExperienceSlice>
+
+/**
+ * Component for "Experience" Slices.
+ */
+const Experience: FC<ExperienceProps> = ({ slice }) => {
+  const { heading } = slice.primary
+
+  const animation = {
+    initial: { opacity: 0, y: 20 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+  }
+
+  return (
+    <section
+      data-slice-type={slice.slice_type}
+      data-slice-variation={slice.variation}
+      className="container mx-auto max-w-5xl px-6 py-4"
+    >
+      <PrismicRichText field={heading} />
+
+      <div className="timeline">
+        {slice.primary.experiences.map((item, index) => (
+          <div key={index} className="timeline-item">
+            <div className="mb-4 flex items-center justify-between">
+              <Heading as="h3" size="3xl">
+                {item.title}
+              </Heading>
+              <div className="text-muted-foreground">{item.years}</div>
+            </div>
+            <p className="mb-4 text-lg font-semibold">{item.organization}</p>
+            <div className="prose dark:prose-invert">
+              <PrismicRichText field={item.description} />
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default Experience

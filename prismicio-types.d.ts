@@ -126,6 +126,8 @@ export type FooterMultiColumnDocument<Lang extends string = string> =
   >
 
 type HomepageDocumentDataSlicesSlice =
+  | StickyImageSlice
+  | ExperienceSlice
   | CarouselSlice
   | FaqSlice
   | ProcessSlice
@@ -406,6 +408,8 @@ export type LayoutDocument<Lang extends string = string> =
   >
 
 type PageDocumentDataSlicesSlice =
+  | StickyImageSlice
+  | ExperienceSlice
   | FormSlice
   | ContentIndexSlice
   | FeaturesSlice
@@ -488,6 +492,10 @@ export type PageDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PageDocumentData>, 'page', Lang>
 
 type PostDocumentDataSlicesSlice =
+  | StickyImageSlice
+  | FeaturesSlice
+  | CarouselSlice
+  | ExperienceSlice
   | TestimonialSlice
   | FaqSlice
   | ProcessSlice
@@ -661,6 +669,61 @@ export type AllDocumentTypes =
   | SettingsDocument
 
 /**
+ * Item in *Carousel → With Details → Primary → Items*
+ */
+export interface CarouselSliceWithDetailsPrimaryItemsItem {
+  /**
+   * Name field in *Carousel → With Details → Primary → Items*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.withDetails.primary.items[].name
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  name: prismic.KeyTextField
+
+  /**
+   * Color field in *Carousel → With Details → Primary → Items*
+   *
+   * - **Field Type**: Color
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.withDetails.primary.items[].color
+   * - **Documentation**: https://prismic.io/docs/fields/color
+   */
+  color: prismic.ColorField
+
+  /**
+   * Logo field in *Carousel → With Details → Primary → Items*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.withDetails.primary.items[].logo
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  logo: prismic.ImageField<never>
+
+  /**
+   * Link field in *Carousel → With Details → Primary → Items*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.withDetails.primary.items[].link
+   * - **Documentation**: https://prismic.io/docs/fields/link
+   */
+  link: prismic.LinkField<string, string, unknown, prismic.FieldState, never>
+
+  /**
+   * Description field in *Carousel → With Details → Primary → Items*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.withDetails.primary.items[].description
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  description: prismic.RichTextField
+}
+
+/**
  * Primary content in *Carousel → Default → Primary*
  */
 export interface CarouselSliceDefaultPrimary {
@@ -704,9 +767,47 @@ export type CarouselSliceDefault = prismic.SharedSliceVariation<
 >
 
 /**
+ * Primary content in *Carousel → With Details → Primary*
+ */
+export interface CarouselSliceWithDetailsPrimary {
+  /**
+   * Heading field in *Carousel → With Details → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.withDetails.primary.heading
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  heading: prismic.RichTextField
+
+  /**
+   * Items field in *Carousel → With Details → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: carousel.withDetails.primary.items[]
+   * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+   */
+  items: prismic.GroupField<Simplify<CarouselSliceWithDetailsPrimaryItemsItem>>
+}
+
+/**
+ * With Details variation for Carousel Slice
+ *
+ * - **API ID**: `withDetails`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type CarouselSliceWithDetails = prismic.SharedSliceVariation<
+  'withDetails',
+  Simplify<CarouselSliceWithDetailsPrimary>,
+  never
+>
+
+/**
  * Slice variation for *Carousel*
  */
-type CarouselSliceVariation = CarouselSliceDefault
+type CarouselSliceVariation = CarouselSliceDefault | CarouselSliceWithDetails
 
 /**
  * Carousel Shared Slice
@@ -794,6 +895,108 @@ type ContentIndexSliceVariation = ContentIndexSliceDefault
 export type ContentIndexSlice = prismic.SharedSlice<
   'content_index',
   ContentIndexSliceVariation
+>
+
+/**
+ * Item in *Experience → Default → Primary → Experiences*
+ */
+export interface ExperienceSliceDefaultPrimaryExperiencesItem {
+  /**
+   * Title field in *Experience → Default → Primary → Experiences*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.experiences[].title
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  title: prismic.KeyTextField
+
+  /**
+   * Years field in *Experience → Default → Primary → Experiences*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.experiences[].years
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  years: prismic.KeyTextField
+
+  /**
+   * Organization field in *Experience → Default → Primary → Experiences*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.experiences[].organization
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  organization: prismic.KeyTextField
+
+  /**
+   * Description field in *Experience → Default → Primary → Experiences*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.experiences[].description
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  description: prismic.RichTextField
+}
+
+/**
+ * Primary content in *Experience → Default → Primary*
+ */
+export interface ExperienceSliceDefaultPrimary {
+  /**
+   * Heading field in *Experience → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  heading: prismic.RichTextField
+
+  /**
+   * Experiences field in *Experience → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: experience.default.primary.experiences[]
+   * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+   */
+  experiences: prismic.GroupField<
+    Simplify<ExperienceSliceDefaultPrimaryExperiencesItem>
+  >
+}
+
+/**
+ * Default variation for Experience Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type ExperienceSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<ExperienceSliceDefaultPrimary>,
+  never
+>
+
+/**
+ * Slice variation for *Experience*
+ */
+type ExperienceSliceVariation = ExperienceSliceDefault
+
+/**
+ * Experience Shared Slice
+ *
+ * - **API ID**: `experience`
+ * - **Description**: Experience
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type ExperienceSlice = prismic.SharedSlice<
+  'experience',
+  ExperienceSliceVariation
 >
 
 /**
@@ -2259,6 +2462,87 @@ export type RichTextSlice = prismic.SharedSlice<
 >
 
 /**
+ * Primary content in *StickyImage → Default → Primary*
+ */
+export interface StickyImageSliceDefaultPrimary {
+  /**
+   * Heading field in *StickyImage → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sticky_image.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  heading: prismic.RichTextField
+
+  /**
+   * Image field in *StickyImage → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sticky_image.default.primary.image
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  image: prismic.ImageField<never>
+
+  /**
+   * Link field in *StickyImage → Default → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sticky_image.default.primary.link
+   * - **Documentation**: https://prismic.io/docs/fields/link
+   */
+  link: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    'default' | 'outline' | 'secondary' | 'ghost' | 'destructive' | 'link'
+  >
+
+  /**
+   * Content field in *StickyImage → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: sticky_image.default.primary.content
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  content: prismic.RichTextField
+}
+
+/**
+ * Default variation for StickyImage Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type StickyImageSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<StickyImageSliceDefaultPrimary>,
+  never
+>
+
+/**
+ * Slice variation for *StickyImage*
+ */
+type StickyImageSliceVariation = StickyImageSliceDefault
+
+/**
+ * StickyImage Shared Slice
+ *
+ * - **API ID**: `sticky_image`
+ * - **Description**: StickyImage
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type StickyImageSlice = prismic.SharedSlice<
+  'sticky_image',
+  StickyImageSliceVariation
+>
+
+/**
  * Primary content in *Testimonial → Default → Primary*
  */
 export interface TestimonialSliceDefaultPrimary {
@@ -2359,12 +2643,20 @@ declare module '@prismicio/client' {
       CarouselSlice,
       CarouselSliceDefaultPrimary,
       CarouselSliceDefaultItem,
+      CarouselSliceWithDetailsPrimaryItemsItem,
+      CarouselSliceWithDetailsPrimary,
       CarouselSliceVariation,
       CarouselSliceDefault,
+      CarouselSliceWithDetails,
       ContentIndexSlice,
       ContentIndexSliceDefaultPrimary,
       ContentIndexSliceVariation,
       ContentIndexSliceDefault,
+      ExperienceSlice,
+      ExperienceSliceDefaultPrimaryExperiencesItem,
+      ExperienceSliceDefaultPrimary,
+      ExperienceSliceVariation,
+      ExperienceSliceDefault,
       FaqSlice,
       FaqSliceDefaultPrimary,
       FaqSliceDefaultItem,
@@ -2427,6 +2719,10 @@ declare module '@prismicio/client' {
       RichTextSliceVariation,
       RichTextSliceDefault,
       RichTextSliceSecondary,
+      StickyImageSlice,
+      StickyImageSliceDefaultPrimary,
+      StickyImageSliceVariation,
+      StickyImageSliceDefault,
       TestimonialSlice,
       TestimonialSliceDefaultPrimary,
       TestimonialSliceVariation,

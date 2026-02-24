@@ -211,3 +211,46 @@
     aspect-ratio: 1/1;
   }
 }
+@layer components {
+  .skip-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  .skip-link:focus {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 100;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    clip: auto;
+    white-space: normal;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-color: hsl(var(--border));
+  }
+  /* Container for the timeline */
+  .timeline {
+    @apply relative border-l-2 border-border pl-6;
+  }
+
+  /* Each item in the timeline */
+  .timeline-item {
+    @apply relative mb-10;
+  }
+
+  /* The dot on each timeline item */
+  .timeline-item::before {
+    @apply absolute top-1 -left-7.75 h-4 w-4 rounded-full border-4 border-background bg-primary content-[''];
+  }
+}

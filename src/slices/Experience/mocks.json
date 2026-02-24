@@ -1,0 +1,72 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading2",
+						"content": {
+							"text": "Experiences Slice - Heading",
+							"spans": []
+						},
+						"direction": "ltr"
+					}
+				]
+			},
+			"experiences": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"title",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Experience Title"
+								}
+							],
+							[
+								"years",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "2009-2012"
+								}
+							],
+							[
+								"description",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Describe your experience here. Occaecat sint minim reprehenderit do qui ipsum consectetur ad nulla enim eiusmod pariatur commodo. Elit eiusmod ad eu occaecat pariatur dolore.",
+												"spans": []
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							],
+							[
+								"organization",
+								{
+									"__TYPE__": "FieldContent",
+									"type": "Text",
+									"value": "Organization Name"
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
