@@ -27,18 +27,22 @@ const Experience: FC<ExperienceProps> = ({ slice }) => {
       data-slice-variation={slice.variation}
       className="container mx-auto max-w-5xl px-6 py-4"
     >
-      <PrismicRichText field={heading} />
+      <div className="pb-6 lg:pb-12">
+        <PrismicRichText field={heading} />
+      </div>
 
       <div className="timeline">
         {slice.primary.experiences.map((item, index) => (
           <div key={index} className="timeline-item">
-            <div className="mb-4 flex items-center justify-between">
+            <div className="mb-4 flex flex-wrap items-center justify-center lg:justify-between">
               <Heading as="h3" size="3xl">
                 {item.title}
               </Heading>
               <div className="text-muted-foreground">{item.years}</div>
             </div>
-            <p className="mb-4 text-lg font-semibold">{item.organization}</p>
+            <p className="mb-4 text-center text-lg font-semibold lg:text-left">
+              {item.organization}
+            </p>
             <div className="prose dark:prose-invert">
               <PrismicRichText field={item.description} />
             </div>
