@@ -23,7 +23,9 @@ const RichText = ({ slice }: RichTextProps): React.JSX.Element => {
         'bg-secondary': slice.variation === 'secondary',
       })}
     >
-      <PrismicRichText field={slice.primary.rich_text} />
+      <div className="prose lg:prose-lg xl:prose-xl 2xl:prose-2xl dark:prose-invert">
+        <PrismicRichText field={slice.primary.rich_text} />
+      </div>
     </Section>
   )
 }

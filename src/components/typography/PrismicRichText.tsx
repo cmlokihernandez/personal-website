@@ -78,7 +78,7 @@ const defaultComponents: JSXMapSerializer = {
               alt={node.alt || ''}
               width={node.dimensions.width}
               height={node.dimensions.height}
-              className="my-4 rounded-lg shadow-sm md:my-6 lg:my-8 xl:my-10"
+              className="my-4 rounded-lg md:my-6 lg:my-8 xl:my-10"
               title={node.alt || ''}
             />
           </Link>
@@ -93,7 +93,7 @@ const defaultComponents: JSXMapSerializer = {
               alt={node.alt || ''}
               width={node.dimensions.width}
               height={node.dimensions.height}
-              className="my-4 rounded-lg shadow-sm md:my-6 lg:my-8 xl:my-10"
+              className="my-4 rounded-lg md:my-6 lg:my-8 xl:my-10"
               title={node.alt || ''}
             />
           </Link>
