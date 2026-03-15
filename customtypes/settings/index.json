@@ -42,6 +42,50 @@
           "placeholder": ""
         }
       }
+    },
+    "Schema": {
+      "job_title": {
+        "type": "Text",
+        "config": {
+          "label": "Job Title",
+          "placeholder": ""
+        }
+      },
+      "profile_image": {
+        "type": "Image",
+        "config": {
+          "label": "Profile Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "linkedin_url": {
+        "type": "Link",
+        "config": {
+          "label": "LinkedIn URL",
+          "placeholder": "",
+          "select": null,
+          "allowTargetBlank": false,
+          "allowText": false,
+          "repeat": false
+        }
+      },
+      "skills_list": {
+        "type": "Group",
+        "config": {
+          "label": "Skills List",
+          "repeat": true,
+          "fields": {
+            "skill_name": {
+              "type": "Text",
+              "config": {
+                "label": "Skill Name",
+                "placeholder": ""
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

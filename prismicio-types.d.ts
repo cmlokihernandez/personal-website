@@ -555,6 +555,21 @@ export type PostDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PostDocumentData>, 'post', Lang>
 
 /**
+ * Item in *Settings → Skills List*
+ */
+export interface SettingsDocumentDataSkillsListItem {
+  /**
+   * Skill Name field in *Settings → Skills List*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.skills_list[].skill_name
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  skill_name: prismic.KeyTextField
+}
+
+/**
  * Content for Settings documents
  */
 interface SettingsDocumentData {
@@ -611,7 +626,55 @@ interface SettingsDocumentData {
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/fields/text
    */
-  privacy_toast_message: prismic.KeyTextField
+  privacy_toast_message: prismic.KeyTextField /**
+   * Job Title field in *Settings*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.job_title
+   * - **Tab**: Schema
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  job_title: prismic.KeyTextField
+
+  /**
+   * Profile Image field in *Settings*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.profile_image
+   * - **Tab**: Schema
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  profile_image: prismic.ImageField<never>
+
+  /**
+   * LinkedIn URL field in *Settings*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.linkedin_url
+   * - **Tab**: Schema
+   * - **Documentation**: https://prismic.io/docs/fields/link
+   */
+  linkedin_url: prismic.LinkField<
+    string,
+    string,
+    unknown,
+    prismic.FieldState,
+    never
+  >
+
+  /**
+   * Skills List field in *Settings*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.skills_list[]
+   * - **Tab**: Schema
+   * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+   */
+  skills_list: prismic.GroupField<Simplify<SettingsDocumentDataSkillsListItem>>
 }
 
 /**
@@ -2668,6 +2731,7 @@ declare module '@prismicio/client' {
       PostDocumentDataSlicesSlice,
       SettingsDocument,
       SettingsDocumentData,
+      SettingsDocumentDataSkillsListItem,
       AllDocumentTypes,
       CarouselSlice,
       CarouselSliceDefaultPrimary,

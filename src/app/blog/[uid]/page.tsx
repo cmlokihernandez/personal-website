@@ -4,9 +4,10 @@ import { SliceZone } from '@prismicio/react'
 
 import { createClient } from '@/prismicio'
 import { components } from '@/slices'
-import { asText } from '@prismicio/client'
+import { asLink, asText } from '@prismicio/client'
 import Heading from '@/components/typography/Heading'
 import { Graph } from 'schema-dts'
+import Script from 'next/script'
 
 type Params = { uid: string }
 type SearchParams = {
@@ -26,41 +27,59 @@ export default async function Page({
   const page = await client.getByUID('post', uid, {}).catch(() => notFound())
   const settings = await client.getSingle('settings')
   const pageNumber = { page: searchPage }
-
+  const authorName = settings.data.site_title || 'Celeste Buckelew'
+  const domain = settings.data.domain || 'example.com'
+  const baseUrl = `https://${domain}`
+  const sameAsLinks = [asLink(settings.data.linkedin_url)].filter(
+    (l): l is string => Boolean(l),
+  )
   const jsonLd: Graph = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'WebSite',
-        '@id': `https://${settings.data.domain || `example.com`}/#site`,
-        name: settings.data.site_title || '',
-        url: `https://${settings.data.domain || `example.com`}/`,
+        '@id': `${baseUrl}/#site`,
+        name: authorName,
+        url: `${baseUrl}`,
+        publisher: { '@id': `${baseUrl}/#author` },
+      },
+      {
+        '@type': 'Person',
+        '@id': `${baseUrl}/#author`,
+        name: authorName,
+        url: baseUrl,
+        image: settings.data.profile_image?.url || undefined,
+        jobTitle: settings.data.job_title || 'Professional Title', // Add this to your Prismic Settings
+        // This is huge for SEO regarding skills:
+        knowsAbout:
+          settings.data.skills_list?.map((s: any) => s.skill_name) || [],
+        sameAs: [(sameAsLinks.length > 0 ? sameAsLinks : undefined) as any],
       },
       {
         '@type': 'BlogPosting',
-        '@id': `https://${settings.data.domain || `example.com`}${
-          page.url
-        }/#post`,
+        '@id': `${baseUrl}${page.url}/#post`,
         headline: asText(page.data.title),
         description:
           asText(page.data.excerpt) || page.data.meta_description || undefined,
-        mainEntityOfPage: `https://${settings.data.domain || `example.com`}${
-          page.url
-        }`,
+        mainEntityOfPage: `${baseUrl}${page.url}`,
         datePublished: page.first_publication_date || undefined,
         dateModified: page.last_publication_date || undefined,
         author: {
-          '@type': 'Organization',
-          name: settings.data.site_title || 'Fill In Site Title in CMS',
+          '@id': `${baseUrl}/#author`,
+        },
+        publisher: {
+          '@id': `${baseUrl}/#author`,
         },
         image: page.data.meta_image.url || undefined,
+        inLanguage: settings.lang,
       },
     ],
   }
 
   return (
     <>
-      <script
+      <Script
+        id="json-ld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
