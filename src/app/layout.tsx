@@ -4,14 +4,14 @@ import { createClient, repositoryName } from '@/prismicio'
 import Header from '@/components/layout/Header/Header'
 import { cn } from '@/lib/utils'
 import Footer from '@/components/layout/Footer/Footer'
-import { Outfit } from 'next/font/google'
+import { Outfit, Inter } from 'next/font/google'
 import { PrismicPreview } from '@prismicio/next'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import Analytics from '@/components/Analytics'
 import { Toaster } from '@/components/ui/sonner'
 import PrivacyToast from '@/components/PrivacyToast'
 
-const outfit = Outfit({ subsets: ['latin'], variable: '--font-sans' })
+const inter = Inter({subsets:['latin'],variable:'--font-sans'})
 
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient()
@@ -42,7 +42,7 @@ export default async function RootLayout({
   return (
     <html
       lang="en"
-      className={cn(outfit.variable, 'scroll-smooth')}
+      className={cn( 'scroll-smooth', "font-sans", inter.variable)}
       suppressHydrationWarning
     >
       <head>
