@@ -4,14 +4,14 @@ import { createClient, repositoryName } from '@/prismicio'
 import Header from '@/components/layout/Header/Header'
 import { cn } from '@/lib/utils'
 import Footer from '@/components/layout/Footer/Footer'
-import { Outfit, Inter } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { PrismicPreview } from '@prismicio/next'
 import { ThemeProvider } from '@/components/ThemeProvider'
 import Analytics from '@/components/Analytics'
 import { Toaster } from '@/components/ui/sonner'
 import PrivacyToast from '@/components/PrivacyToast'
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'})
+const inter = Inter({ subsets: ['latin'], variable: '--font-sans' })
 
 export async function generateMetadata(): Promise<Metadata> {
   const client = createClient()
@@ -36,13 +36,13 @@ export default async function RootLayout({
   const clarityId = process.env.NEXT_PUBLIC_CLARITY_ID
   // const fbId = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID
   const isProd = process.env.NEXT_PUBLIC_VERCEL_ENV === 'production'
-  const siteUrl = isProd ? 'https://www.celestebuckelew.com' : ''
+  const siteUrl = isProd ? 'https://www.christina-hernandez.com' : ''
   const client = createClient()
   const settings = await client.getSingle('settings')
   return (
     <html
       lang="en"
-      className={cn( 'scroll-smooth', "font-sans", inter.variable)}
+      className={cn('scroll-smooth', 'font-sans', inter.variable)}
       suppressHydrationWarning
     >
       <head>

@@ -24,7 +24,7 @@ export default async function Page() {
       {
         '@type': 'Person',
         '@id': `https://${settings.data.domain}/#author`,
-        name: settings.data.site_title || 'Celeste Buckelew',
+        name: settings.data.site_title || 'Christina Hernandez',
         jobTitle: settings.data.job_title || 'Professional',
         knowsAbout: skillsArray,
         sameAs: [(sameAsLinks.length > 0 ? sameAsLinks : undefined) as any],

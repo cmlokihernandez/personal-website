@@ -55,7 +55,7 @@ const StickyImage: FC<StickyImageProps> = ({ slice }) => {
             />
           </div>
           <div className="flex justify-center">
-            <Button asChild>
+            <Button asChild variant={link.variant}>
               <PrismicNextLink field={link}>
                 {link.text || 'Link Text Needed: Please Add It'}
               </PrismicNextLink>

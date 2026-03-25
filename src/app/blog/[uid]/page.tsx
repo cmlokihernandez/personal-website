@@ -27,7 +27,7 @@ export default async function Page({
   const page = await client.getByUID('post', uid, {}).catch(() => notFound())
   const settings = await client.getSingle('settings')
   const pageNumber = { page: searchPage }
-  const authorName = settings.data.site_title || 'Celeste Buckelew'
+  const authorName = settings.data.site_title || 'Christina Hernandez'
   const domain = settings.data.domain || 'example.com'
   const baseUrl = `https://${domain}`
   const sameAsLinks = [asLink(settings.data.linkedin_url)].filter(

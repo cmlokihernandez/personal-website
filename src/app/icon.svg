@@ -1,5 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="oklch(0.5 0.15 222)" />
+  <rect
+    width="64"
+    height="64"
+    rx="12"
+    fill="oklch(0.263 0.024 320.12)"
+  />
   <text
     x="50%"
     y="50%"
@@ -8,9 +13,9 @@
     font-family="Inter, system-ui, sans-serif"
     font-weight="700"
     font-size="34"
-    fill="oklch(0.98 0.02 201)"
+    fill="oklch(0.68 0.211 324.591)"
     letter-spacing="-1"
   >
-    CB
+    CH
   </text>
 </svg>

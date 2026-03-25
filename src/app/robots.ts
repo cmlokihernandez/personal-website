@@ -4,7 +4,7 @@ import { createClient } from '@/prismicio'
 export default async function robots(): Promise<MetadataRoute.Robots> {
   const client = createClient()
   const settings = await client.getSingle('settings')
-  const baseUrl = `https://${settings.data?.domain || 'www.celestebuckelew.com'}`
+  const baseUrl = `https://${settings.data?.domain || 'www.christina-hernandez.com'}`
 
   return {
     rules: {
