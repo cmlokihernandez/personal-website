@@ -82,7 +82,7 @@ export default function PrivacyManager() {
           ) : (
             <Badge
               variant="outline"
-              className="shrink-0 border-primary font-bold text-primary"
+              className="shrink-0 border-primary font-bold text-primary dark:text-fuchsia-400"
             >
               Active
             </Badge>

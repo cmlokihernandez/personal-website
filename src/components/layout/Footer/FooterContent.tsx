@@ -32,7 +32,7 @@ const FooterContent = ({
 }: FooterContentProps): React.JSX.Element => {
   const { privacy_link, copyright, social_media } = data
   return (
-    <Section as="footer" className="mt-auto bg-muted text-primary-foreground">
+    <Section as="footer" className="mt-auto bg-muted">
       <SliceZone components={components} slices={data.slices1} />
       {isFilled.group(social_media) && (
         <div className="flex justify-center gap-4">
