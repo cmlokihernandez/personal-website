@@ -16,6 +16,7 @@ export const components = {
   image_with_text: dynamic(() => import('./ImageWithText')),
   opt_out: dynamic(() => import('./OptOut')),
   process: dynamic(() => import('./Process')),
+  references: dynamic(() => import('./References')),
   rich_text: dynamic(() => import('./RichText')),
   sticky_image: dynamic(() => import('./StickyImage')),
   testimonial: dynamic(() => import('./Testimonial')),

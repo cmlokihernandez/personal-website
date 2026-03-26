@@ -1,11 +1,7 @@
 /* Imports & Plugins */
 @import 'tailwindcss';
-@import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 @import 'tw-animate-css';
-@import 'shadcn/tailwind.css';
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
@@ -218,6 +214,10 @@
   }
 }
 @layer components {
+  .hanging-indent {
+    @apply block pl-4;
+    text-indent: -1.5rem;
+  }
   .skip-link {
     position: absolute;
     width: 1px;

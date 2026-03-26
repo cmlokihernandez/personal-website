@@ -366,6 +366,7 @@ export type LayoutDocument<Lang extends string = string> =
   >
 
 type PageDocumentDataSlicesSlice =
+  | ReferencesSlice
   | OptOutSlice
   | StickyImageSlice
   | ExperienceSlice
@@ -451,6 +452,7 @@ export type PageDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PageDocumentData>, 'page', Lang>
 
 type PostDocumentDataSlicesSlice =
+  | ReferencesSlice
   | StickyImageSlice
   | FeaturesSlice
   | CarouselSlice
@@ -2459,6 +2461,78 @@ type ProcessSliceVariation = ProcessSliceDefault
 export type ProcessSlice = prismic.SharedSlice<'process', ProcessSliceVariation>
 
 /**
+ * Item in *References → Default → Primary → Sources*
+ */
+export interface ReferencesSliceDefaultPrimarySourcesItem {
+  /**
+   * Citation field in *References → Default → Primary → Sources*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter source information
+   * - **API ID Path**: references.default.primary.sources[].citation
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  citation: prismic.RichTextField
+}
+
+/**
+ * Primary content in *References → Default → Primary*
+ */
+export interface ReferencesSliceDefaultPrimary {
+  /**
+   * Heading field in *References → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: Optionally add a heading (default is References)
+   * - **API ID Path**: references.default.primary.heading
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  heading: prismic.KeyTextField
+
+  /**
+   * Sources field in *References → Default → Primary*
+   *
+   * - **Field Type**: Group
+   * - **Placeholder**: *None*
+   * - **API ID Path**: references.default.primary.sources[]
+   * - **Documentation**: https://prismic.io/docs/fields/repeatable-group
+   */
+  sources: prismic.GroupField<
+    Simplify<ReferencesSliceDefaultPrimarySourcesItem>
+  >
+}
+
+/**
+ * Default variation for References Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type ReferencesSliceDefault = prismic.SharedSliceVariation<
+  'default',
+  Simplify<ReferencesSliceDefaultPrimary>,
+  never
+>
+
+/**
+ * Slice variation for *References*
+ */
+type ReferencesSliceVariation = ReferencesSliceDefault
+
+/**
+ * References Shared Slice
+ *
+ * - **API ID**: `references`
+ * - **Description**: References
+ * - **Documentation**: https://prismic.io/docs/slices
+ */
+export type ReferencesSlice = prismic.SharedSlice<
+  'references',
+  ReferencesSliceVariation
+>
+
+/**
  * Primary content in *RichText → Default → Primary*
  */
 export interface RichTextSliceDefaultPrimary {
@@ -2809,6 +2883,11 @@ declare module '@prismicio/client' {
       ProcessSliceDefaultItem,
       ProcessSliceVariation,
       ProcessSliceDefault,
+      ReferencesSlice,
+      ReferencesSliceDefaultPrimarySourcesItem,
+      ReferencesSliceDefaultPrimary,
+      ReferencesSliceVariation,
+      ReferencesSliceDefault,
       RichTextSlice,
       RichTextSliceDefaultPrimary,
       RichTextSliceSecondaryPrimary,

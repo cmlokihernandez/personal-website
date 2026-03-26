@@ -1,0 +1,73 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"sources": {
+				"__TYPE__": "GroupContentType",
+				"value": [
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"citation",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Bagchi, A. (1996). Conflicting nationalisms: the voice of the subaltern in Mahasweta Devi's Bashai Tudu. Tulsa Studies in Women's Literature, 15(1), 41-50.",
+												"spans": [
+													{
+														"type": "em",
+														"start": 92,
+														"end": 103
+													},
+													{
+														"type": "em",
+														"start": 105,
+														"end": 144
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					},
+					{
+						"__TYPE__": "GroupItemContent",
+						"value": [
+							[
+								"citation",
+								{
+									"__TYPE__": "StructuredTextContent",
+									"value": [
+										{
+											"type": "paragraph",
+											"content": {
+												"text": "Pollan, M. (2006). The omnivore's dilemma: A natural history of four meals. New York, NY: Penguin Group.",
+												"spans": [
+													{
+														"type": "em",
+														"start": 19,
+														"end": 74
+													}
+												]
+											},
+											"direction": "ltr"
+										}
+									]
+								}
+							]
+						]
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]

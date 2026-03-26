@@ -1,0 +1,44 @@
+{
+  "id": "references",
+  "type": "SharedSlice",
+  "name": "References",
+  "description": "References",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "heading": {
+          "type": "Text",
+          "config": {
+            "label": "Heading",
+            "placeholder": "Optionally add a heading (default is References)"
+          }
+        },
+        "sources": {
+          "type": "Group",
+          "config": {
+            "label": "Sources",
+            "repeat": true,
+            "fields": {
+              "citation": {
+                "type": "StructuredText",
+                "config": {
+                  "label": "Citation",
+                  "placeholder": "Enter source information",
+                  "allowTargetBlank": true,
+                  "single": "strong,em,hyperlink"
+                }
+              }
+            }
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

@@ -43,6 +43,9 @@
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
+            "references": {
+              "type": "SharedSlice"
+            },
             "sticky_image": {
               "type": "SharedSlice"
             },
