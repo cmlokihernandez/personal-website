@@ -8,6 +8,7 @@ import { asLink, asText } from '@prismicio/client'
 import Heading from '@/components/typography/Heading'
 import { Graph } from 'schema-dts'
 import Script from 'next/script'
+import { slugifyHeading } from '@/lib/utils'
 
 type Params = { uid: string }
 type SearchParams = {
@@ -87,6 +88,7 @@ export default async function Page({
         as="h1"
         size="6xl"
         className="mx-auto my-8 max-w-(--breakpoint-lg) px-2 md:px-6 lg:my-12 lg:text-center"
+        id={slugifyHeading({ text: asText(page.data.title) })}
       >
         {asText(page.data.title)}
       </Heading>

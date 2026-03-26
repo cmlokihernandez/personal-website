@@ -9,46 +9,47 @@ import * as React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ReactNode } from 'react'
+import { slugifyHeading } from '@/lib/utils'
 
 const defaultComponents: JSXMapSerializer = {
-  heading1: ({ children }: { children: ReactNode }) => {
+  heading1: ({ children, node }) => {
     return (
-      <Heading as="h1" size="6xl">
+      <Heading as="h1" size="6xl" id={slugifyHeading(node)}>
         {children}
       </Heading>
     )
   },
-  heading2: ({ children }: { children: ReactNode }) => {
+  heading2: ({ children, node }) => {
     return (
-      <Heading as="h2" size="5xl">
+      <Heading as="h2" size="5xl" id={slugifyHeading(node)}>
         {children}
       </Heading>
     )
   },
-  heading3: ({ children }: { children: ReactNode }) => {
+  heading3: ({ children, node }) => {
     return (
-      <Heading as="h3" size="4xl">
+      <Heading as="h3" size="4xl" id={slugifyHeading(node)}>
         {children}
       </Heading>
     )
   },
-  heading4: ({ children }: { children: ReactNode }) => {
+  heading4: ({ children, node }) => {
     return (
-      <Heading as="h4" size="3xl">
+      <Heading as="h4" size="3xl" id={slugifyHeading(node)}>
         {children}
       </Heading>
     )
   },
-  heading5: ({ children }: { children: ReactNode }) => {
+  heading5: ({ children, node }) => {
     return (
-      <Heading as="h5" size="2xl">
+      <Heading as="h5" size="2xl" id={slugifyHeading(node)}>
         {children}
       </Heading>
     )
   },
-  heading6: ({ children }: { children: ReactNode }) => {
+  heading6: ({ children, node }) => {
     return (
-      <Heading as="h6" size="xl">
+      <Heading as="h6" size="xl" id={slugifyHeading(node)}>
         {children}
       </Heading>
     )
