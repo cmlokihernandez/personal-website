@@ -48,11 +48,7 @@ const Hero = ({ slice }: HeroProps): React.JSX.Element => {
             field={image}
             fill
             sizes="100vw"
-            className={cn(
-              'hidden object-cover lg:block',
-              // anchor left for portfolio-style crop
-              'object-left',
-            )}
+            className={cn('object-cover')}
             fetchPriority="high"
           />
 
@@ -65,9 +61,7 @@ const Hero = ({ slice }: HeroProps): React.JSX.Element => {
       <div
         className={cn(
           'relative flex h-full justify-center px-6 py-16 lg:justify-end lg:px-12',
-          contentCentered
-            ? 'flex-col items-center justify-center text-center'
-            : 'items-center',
+          'flex-col items-center justify-center text-center',
         )}
       >
         <div
@@ -76,7 +70,7 @@ const Hero = ({ slice }: HeroProps): React.JSX.Element => {
             contentBg,
             contentCentered ? 'mx-auto' : 'text-center lg:text-center',
             {
-              'text-center lg:max-w-xl lg:text-center xl:max-w-2xl 2xl:max-w-5xl':
+              'text-center lg:max-w-3xl lg:text-center xl:max-w-5xl':
                 slice.variation !== 'contentHeight',
             },
           )}
