@@ -41,7 +41,7 @@ const Experience: FC<ExperienceProps> = ({ slice }) => {
               <Heading as="h3" size="3xl">
                 {item.title}
               </Heading>
-              <div className="text-muted-foreground">{item.years}</div>
+              <div className="shrink-0 text-muted-foreground">{item.years}</div>
             </div>
             <p className="mb-4 text-center text-lg font-semibold lg:text-left">
               {item.organization}
