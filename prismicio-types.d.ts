@@ -556,6 +556,108 @@ interface PostDocumentData {
 export type PostDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<PostDocumentData>, 'post', Lang>
 
+type ProjectDocumentDataSlicesSlice =
+  | HeroSlice
+  | ImageWithTextSlice
+  | StickyImageSlice
+  | TestimonialSlice
+  | RichTextSlice
+  | ReferencesSlice
+  | FaqSlice
+  | CarouselSlice
+
+/**
+ * Content for Project documents
+ */
+interface ProjectDocumentData {
+  /**
+   * Title field in *Project*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Enter the project title
+   * - **API ID Path**: project.title
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  title: prismic.RichTextField
+
+  /**
+   * Featured Image field in *Project*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.featured_image
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  featured_image: prismic.ImageField<never>
+
+  /**
+   * Excerpt field in *Project*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Short blurb to appear on the project index
+   * - **API ID Path**: project.excerpt
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/fields/rich-text
+   */
+  excerpt: prismic.RichTextField
+
+  /**
+   * Slice Zone field in *Project*
+   *
+   * - **Field Type**: Slice Zone
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.slices[]
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/slices
+   */
+  slices: prismic.SliceZone<ProjectDocumentDataSlicesSlice> /**
+   * Meta Title field in *Project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **API ID Path**: project.meta_title
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  meta_title: prismic.KeyTextField
+
+  /**
+   * Meta Description field in *Project*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: A brief summary of the page
+   * - **API ID Path**: project.meta_description
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/fields/text
+   */
+  meta_description: prismic.KeyTextField
+
+  /**
+   * Meta Image field in *Project*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: project.meta_image
+   * - **Tab**: SEO & Metadata
+   * - **Documentation**: https://prismic.io/docs/fields/image
+   */
+  meta_image: prismic.ImageField<never>
+}
+
+/**
+ * Project document from Prismic
+ *
+ * - **API ID**: `project`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/content-modeling
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ProjectDocument<Lang extends string = string> =
+  prismic.PrismicDocumentWithUID<Simplify<ProjectDocumentData>, 'project', Lang>
+
 /**
  * Item in *Settings → Skills List*
  */
@@ -701,6 +803,7 @@ export type AllDocumentTypes =
   | LayoutDocument
   | PageDocument
   | PostDocument
+  | ProjectDocument
   | SettingsDocument
 
 /**
@@ -869,7 +972,7 @@ export interface ContentIndexSliceDefaultPrimary {
    * - **API ID Path**: content_index.default.primary.content_type
    * - **Documentation**: https://prismic.io/docs/fields/select
    */
-  content_type: prismic.SelectField<'post' | 'service', 'filled'>
+  content_type: prismic.SelectField<'post' | 'project', 'filled'>
 
   /**
    * Fallback Item Image field in *ContentIndex → Default → Primary*
@@ -2803,6 +2906,9 @@ declare module '@prismicio/client' {
       PostDocument,
       PostDocumentData,
       PostDocumentDataSlicesSlice,
+      ProjectDocument,
+      ProjectDocumentData,
+      ProjectDocumentDataSlicesSlice,
       SettingsDocument,
       SettingsDocumentData,
       SettingsDocumentDataSkillsListItem,

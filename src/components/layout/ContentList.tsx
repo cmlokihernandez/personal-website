@@ -29,7 +29,7 @@ const ContentList = async ({
   const client = createClient()
   let prismicData
 
-  prismicData = await client.getByType('post', {
+  prismicData = await client.getByType(contentType as 'post' | 'project', {
     orderings: {
       field: 'document.first_publication_date',
       direction: 'desc',
@@ -50,7 +50,7 @@ const ContentList = async ({
                 key={item.id}
                 className="group grid border-t border-t-secondary py-10 lg:grid-cols-5"
               >
-                <div className="flex items-center justify-center transition duration-300 ease-in-out lg:col-span-2 lg:-mr-4 group-hover:lg:translate-x-2">
+                <div className="flex items-center justify-center transition duration-300 ease-in-out lg:col-span-2 lg:-mr-4">
                   <Link href={item.url || '#'}>
                     <PrismicNextImage
                       field={
@@ -62,7 +62,7 @@ const ContentList = async ({
                     />
                   </Link>
                 </div>
-                <Card className="bg-background/80 backdrop-blur transition duration-300 ease-in-out lg:col-span-3 lg:-ml-4 group-hover:lg:-translate-x-2">
+                <Card className="bg-background/80 backdrop-blur transition duration-300 ease-in-out lg:col-span-3 lg:-ml-4">
                   <CardHeader>
                     <PrismicRichText
                       field={item.data.title}
@@ -79,10 +79,10 @@ const ContentList = async ({
                       }}
                     />
                   </CardHeader>
-                  <CardContent>
+                  <CardContent className="prose dark:prose-invert">
                     <PrismicRichText field={item.data.excerpt} />
                   </CardContent>
-                  <CardFooter>
+                  <CardFooter className="h-full">
                     <Button asChild>
                       <Link
                         href={item.url || '#'}

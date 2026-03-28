@@ -30,6 +30,10 @@ const routes: Route[] = [
     type: 'post',
     path: '/blog/:uid',
   },
+  {
+    type: 'project',
+    path: '/projects/:uid',
+  },
 ]
 
 /**
