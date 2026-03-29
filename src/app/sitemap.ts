@@ -6,11 +6,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const client = createClient()
 
   // 1. Fetch all data in parallel to save time
-  const [settings, homepage, pages, posts] = await Promise.all([
+  const [settings, homepage, pages, posts, projects] = await Promise.all([
     client.getSingle('settings'),
     client.getSingle('homepage'),
     client.getAllByType('page'),
     client.getAllByType('post'),
+    client.getAllByType('project'),
   ])
 
   const baseUrl = `https://${settings.data.domain || 'example.com'}`
@@ -27,6 +28,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       frequency = 'daily'
       priority = 1.0
     } else if (doc.type === 'post') {
+      frequency = 'weekly'
+      priority = 0.8
+    } else if (doc.type === 'project') {
       frequency = 'weekly'
       priority = 0.8
     } else if (doc.type === 'page') {
@@ -48,6 +52,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     homepage ? formatEntry(homepage) : null,
     ...pages.map(formatEntry),
     ...posts.map(formatEntry),
+    ...projects.map(formatEntry),
   ].filter(
     (entry): entry is NonNullable<typeof entry> =>
       entry !== null && !!entry.url,
